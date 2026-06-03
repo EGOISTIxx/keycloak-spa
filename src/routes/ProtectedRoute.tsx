@@ -1,5 +1,4 @@
-import type { FC } from "react";
-import type { JSX } from "react/jsx-runtime";
+import { type FC, type JSX } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../auth/useAuth";
 
