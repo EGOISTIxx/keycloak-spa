@@ -8,7 +8,9 @@ interface IProps {
   children: JSX.Element;
 }
 
-const AuthProvider: FC<IProps> = ({ keycloak, children }) => {
+const AuthProvider: FC<IProps> = (props) => {
+  const { keycloak, children } = props;
+
   return (
     <AuthContext.Provider value={{ keycloak }}>{children}</AuthContext.Provider>
   );
